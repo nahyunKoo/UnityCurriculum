@@ -41,9 +41,11 @@ public class BTNManager : MonoBehaviour
                 break;
             case BTNtype.exit:
                 SceneManager.LoadScene("StartScene");
+                Time.timeScale = 1;
                 break;
             case BTNtype.retry:
                 SceneManager.LoadScene("GameScene");
+                Time.timeScale = 1;
                 break;
 
         }
